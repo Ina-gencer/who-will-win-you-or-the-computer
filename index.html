@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who wins: you or computer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="typewriter">
+            <h1 id="welcome"></h1>
+        </div>
+        <div id="game">
+            <h2>Try and guess a number between 1 and 20</h2>
+            <p>The computer picks a random number. You try to guess it.</p>
+            <p>You have 5 attempts.</p>
+            <div class="input-div">
+                <input id="input-field" type="text" placeholder="Enter your number...">
+                <button id="btn-guess">guess</button>
+            </div>
+            <p>You have <span id="remaining-guesses">5</span> guesses left</p>
+             <p>Your previous guesses: <span id="previous-guesses"></span></p>
+            <p id="message-box">hints will appear here</p>
+            <button id="btn-again">Play again</button>
+        </div>
+       
+        <div class="bottom-block">
+            <img class="question q-one" src="question-mark2.png" alt="question">
+            <img class="computer" src="comp.png" alt="computer">
+            <img class="question  q-two" src="question-mark2.png" alt="question">
+            <img class="question  q-three" src="question-mark2.png" alt="question">
+            <img class="think" src="man.png" alt="question">
+        </div>
+      
+    </div>
+
+<br>
+<hr>
+<br>
+<footer>
+    <p class="byMe">by Ina Gençer</p>
+</footer>
+<br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+<script src="script.js"></script>
+</body>
+</html>
